@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * 模拟并发操作
+ * 模拟并发操作(使用UUID无法控制并发)
  * @Rollback和@commit替代@TransactionConfiguration（defaultRollback=true）
  */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -23,9 +23,9 @@ import java.util.concurrent.CountDownLatch;
 public class UuidOrderTest {
 
     @Autowired
-    @Qualifier("uuidOrderServiceImpl")
-    //@Qualifier("snowflakeOrderServiceImpl")
-    //@Qualifier("redisOrderServiceImpl")
+//    @Qualifier("uuidOrderServiceImpl")
+    @Qualifier("snowflakeOrderServiceImpl")
+//    @Qualifier("redisOrderServiceImpl")
     private IorderService orderService;
 
     private static final int threadNum = 100;

@@ -14,6 +14,6 @@ public class UuidOrderServiceImpl implements IorderService {
      * 产生订单号
      */
     public void orderId(){
-        System.out.println("insert into order_id(id) value('"+ UUID.randomUUID() +"')");
+        System.out.println("insert into order_id(id) value('"+ UUID.randomUUID() +"');");
     }
 }
