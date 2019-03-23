@@ -5,8 +5,6 @@ import com.jiyifa.util.SnowflakeIdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
-
 
 @Service("snowflakeOrderServiceImpl")
 public class SnowflakeOrderServiceImpl implements IorderService {

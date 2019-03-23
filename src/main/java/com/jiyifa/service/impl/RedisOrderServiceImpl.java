@@ -2,7 +2,6 @@ package com.jiyifa.service.impl;
 
 import com.jiyifa.service.IorderService;
 import com.jiyifa.util.RedisUtils;
-import javafx.scene.chart.PieChart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
