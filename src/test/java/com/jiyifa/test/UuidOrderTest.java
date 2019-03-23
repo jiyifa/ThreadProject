@@ -24,8 +24,8 @@ public class UuidOrderTest {
 
     @Autowired
 //    @Qualifier("uuidOrderServiceImpl")
-    @Qualifier("snowflakeOrderServiceImpl")
-//    @Qualifier("redisOrderServiceImpl")
+//    @Qualifier("snowflakeOrderServiceImpl")
+    @Qualifier("redisOrderServiceImpl")
     private IorderService orderService;
 
     private static final int threadNum = 100;
